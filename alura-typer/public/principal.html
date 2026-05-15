@@ -4,26 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Alura Typer</title>
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/libs/google-fonts.css">
 </head>
 
 <body>
-    <h1>Alura Typer</h1>
-    <p class="frase">esta frase não tem mais cinco palavras agora</p>
 
-    <div class="lista-informacoes">
-        <ul class="informacoes">
-            <li><span id="tamanho-frase"></span> Palavras</li>
-            <li>10 segundos</li>
-        </ul>
-    </div>
+    <div class="container">
+        <h1 class="center">Alura Typer</h1>
+        <p class="frase center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae culpa veniam quaerat
+            quod aliquam? Officiis recusandae aperiam consequatur velit, cum quo quisquam sunt saepe hic vero quas,
+            perferendis in sequi?</p>
 
-    <textarea name="name" id="" class="campo-digitacao"></textarea>
-    
-    <div class="marcadores">
-        <u>
-            <li><span id="contador-caracteres">0</span> caracteres</li>
-            <li><span id="contador-palavras">0</span> palavras</li>
-        </u>
+        <div class="lista-informacoes center">
+            <ul class="informacoes">
+                <li>
+                    <i class="small material-icons icones">description</i>
+                    <span id="tamanho-frase">5</span> Palavras
+                </li>
+                <li>
+                    <i class="small material-icons icones">query_builder</i>
+                    <span id="tempo-digitacao">10</span> segundos
+                </li>
+            </ul>
+        </div>
+
+        <textarea name="name" rows="8" caols="40" class="campo-digitacao"></textarea>
+
+        <div class="botoes">
+            <a class="btn-floating btn-large waves-effect waves-light red" id="botao-reiniciar">
+                <i class="material-icons">restore</i></a>
+        </div>
+
+        <div class="marcadores">
+            <ul class="center">
+                <li><span id="contador-caracteres">0</span> caracteres</li>
+                <li><span id="contador-palavras">0</span> palavras</li>
+                </u>
+        </div>
     </div>
 
     <script src="js/jquery.js"></script>
